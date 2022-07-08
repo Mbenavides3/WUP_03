@@ -47,6 +47,11 @@ According to the numerical summary, there seems to be almost three times as many
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
 ## Conclusions
 
 
