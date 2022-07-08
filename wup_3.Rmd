@@ -39,7 +39,11 @@ According to the Fancy Notch Boxplot, the mean, first quartile, and third quarti
 
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
 
+According to the numerical summary, there seems to be almost three times as many people in the "Middle" seats compared to the people in the "Back" and "Front" seats. However, the "Back" row has consumed about four times as much units of alcohol compared to all other people. 
 
 ## Inferential Tests
 
