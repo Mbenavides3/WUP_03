@@ -52,14 +52,15 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 
-The inferential results show a low p-value, indicated that there is an issue in the data, which warrants further statistical testing through a TurkeyHSD test. 
+The inferential results show a low p-value, indicated that there is an issue in the data, which warrants further statistical testing through a TukeyHSD test. 
 
 ```{r}
 plot(TukeyHSD(model1))
 ```
 
-According to the TurkeyHSD model, the Front-Back difference consistently yields and negative number, indicating that there is an actual difference between the alcohol consumption  of the Front rows and that of the Middle rows; this observation also persists for the Middle-Back data. The differences between  the Middle and the Front rows aren't as large compared to the other two categories, even passing zero at an instance, showing that the Middle and the Front rows are not very different from one another. 
+According to the TukeyHSD model, the Front-Back difference consistently yields and negative number, indicating that there is an actual difference between the alcohol consumption  of the Front rows and that of the Middle rows; this observation also persists for the Middle-Back data. The differences between  the Middle and the Front rows aren't as large compared to the other two categories, even passing zero at an instance, showing that the Middle and the Front rows are not very different from one another. 
 
 ## Conclusions
 
+By analyzing the two boxplots, numerical results, and inferential results, one notices that the people that were sitting in the Back row has consumed a more significant amount of alcohol than the other rows. It is logical to presume that those in the back row of the bus consumed more alcohol than the other rows. 
 
